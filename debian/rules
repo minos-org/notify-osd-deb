@@ -22,8 +22,3 @@ override_dh_autoreconf:
 
 # tests require being run against a system install
 override_dh_auto_test:
-
-execute_after_dh_install:
-	rm debian/notify-osd/usr/share/dbus-1/services/org.freedesktop.Notifications.service
-	rmdir debian/notify-osd/usr/share/dbus-1/services/
-	rmdir debian/notify-osd/usr/share/dbus-1/
